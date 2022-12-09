@@ -28,10 +28,10 @@ document.getElementById("loading").setAttribute("style", "display:none;");
         list.pieces.forEach((element) => {
             template.append(this.artPieceTemplate(element));
          });
-
+ 
       }
       else if (status == "true"){
-         createHeaderTitle.textContent.toUpperCase() = list.firstN + ' ' + list.lastN.toUpperCase();
+         createHeaderTitle.textContent = list.firstN.toUpperCase() + ' ' + list.lastN.toUpperCase();
         
         template.innerHTML=`
         <h2>Looks like there's nothing here!</h2>
